@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
   padding: 1rem;
   background-color: black;
@@ -43,4 +41,10 @@ background-color: aqua;
 }
 button:hover{
    background-color: skyblue; 
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-style: oblique;
 }
