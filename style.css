@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  
+}
+.container{
+    display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 90vw;
+max-width: 60rem;
+  aspect-ratio: 1;
+}
+.square{
+    height: 5rem;
+    width: 5rem;
+    background-color: black;
+    border-radius: 2px ;
+    box-shadow: 5px 5px 10px black;
+      transition: background-color 0.3s;
+}
+.square:hover{
+    background-color: blue;
+}
+button{
+background-color: aqua;
+    color: white;
+    border: 1px;
+    padding: 1rem;
+   cursor: pointer;
+}
+button:hover{
+   background-color: skyblue; 
+}
