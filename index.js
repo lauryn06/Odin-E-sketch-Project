@@ -2,7 +2,12 @@
 
 const btn=document.querySelector("button");
 const container=document.querySelector(".container");
-
+erase=()=>{
+    if(num <= 100 && num > 0){
+    container.innerHtml="";
+   
+    };
+}
 clicking=()=>{
   const v= window.prompt("How many grid squares per side: ");
 const num = Number(v);

@@ -4,47 +4,86 @@
     box-sizing: border-box;
 }
 body {
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
   height: 100vh;
   padding: 1rem;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.651);
   
 }
 .container{
-    margin: 3rem;
     background-color: beige;
     display:flex;
 flex-wrap: wrap;
 justify-content: space-around;
 width: 90vw;
-max-width: 60rem;
+height: 70vh;
+border-radius: 5px;
+box-shadow: 2px 2px 2px black;
   aspect-ratio: 1;
 }
 .square{
-    margin: 1rem;
-    height: 5rem;
-    width: 5rem;
+    
     background-color: black;
     border-radius: 2px ;
     box-shadow: 5px 5px 10px black;
-      transition: background-color 0.3s;
+      
 }
 .square:hover{
     background-color: blue;
 }
 button{
-background-color: aqua;
+background-color: rgba(0, 0, 0, 0.651);
     color: white;
-    border: 1px;
     padding: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    width: 6rem;
    cursor: pointer;
+   border-radius: 10px;
 }
 button:hover{
    background-color: skyblue; 
 }
 h1{
     color: white;
+    text-shadow: 2px 2px black;
+    padding: 2rem;
     text-align: center;
     font-weight: 100;
     font-style: oblique;
 }
+/* Responsive Design for screens smaller than 600px (phones)
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .container {
+    width: 45vw;
+    aspect-ratio: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .square {
+    margin: 0.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  button {
+    padding: 1rem;
+    margin: 1rem auto;
+    display: inline;
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+ 
